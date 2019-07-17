@@ -1,0 +1,27 @@
+# This file contains CMake Variants, for use with the CMake Tools extension for Visual Studio Code.
+# For more info, see: https://vector-of-bool.github.io/docs/vscode-cmake-tools/variants.html.
+
+build_type:
+  default: debug
+  choices:
+    debug:
+      short: Debug
+      long: Include debugging information
+      buildType: Debug
+    release:
+      short: Release
+      long: Optimize binary
+      buildType: Debug
+enable_cli:
+  default: "yes"
+  choices:
+    "no":
+      short: No CLI
+      long: Enable CLI frontend
+      settings:
+        ENABLE_CLI: OFF
+    "yes":
+      short: CLI
+      long: Disable CLI frontend
+      settings:
+        ENABLE_CLI: ON
