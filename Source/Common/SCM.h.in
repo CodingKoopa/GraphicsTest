@@ -1,0 +1,7 @@
+// Copyright 2019 Graphics Test Project
+// Licensed under GPLv3
+// Refer to license.txt file included.
+
+#define PROJECT_BRANCH_STR "${PROJECT_BRANCH}"
+#define PROJECT_DESC_STR "${PROJECT_DESCRIPTION}"
+#define PROJECT_COMMIT_STR "${PROJECT_COMMIT}"
