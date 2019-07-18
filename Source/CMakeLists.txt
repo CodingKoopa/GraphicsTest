@@ -71,12 +71,9 @@ elseif(CMAKE_CXX_COMPILER_ID MATCHES "GCC" OR CMAKE_CXX_COMPILER_ID MATCHES "Cla
   check_and_add_compile_option(-ggdb DEBUG_ONLY)
 endif()
 
-# Add the common code.
 add_subdirectory(Common)
-# Add the core backend.
 add_subdirectory(Core)
 
-# Add the CLI frontend, if enabled.
 if (ENABLE_CLI)
   add_subdirectory(GraphicsTestCLI)
 endif()
