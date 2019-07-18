@@ -4,15 +4,17 @@
 
 #include "Core.hpp"
 
-#include <iostream>
+#include "Common/Version.hpp"
+
+#include <spdlog/spdlog.h>
 
 namespace Core
 {
 bool Init()
 {
-  std::cout << "Core initialized!" << std::endl;
+  spdlog::info("Core initialized!");
 #ifdef DEBUG
-  std::cout << "Running in debug mode." << std::endl;
+  spdlog::info("Running in debug mode.");
 #endif
 
   return true;
