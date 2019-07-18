@@ -48,8 +48,6 @@ elseif(CMAKE_CXX_COMPILER_ID MATCHES "GCC" OR CMAKE_CXX_COMPILER_ID MATCHES "Cla
   check_and_add_compile_option(-Wswitch-default)
   # Enable more uninitialized variable warnings.
   check_and_add_compile_option(-Wuninitialized)
-  # Enable warnings for floating point equalities.
-  check_and_add_compile_option(-Wfloat-equal)
   # Enable variable shadowing warnings.
   check_and_add_compile_option(-Wshadow)
   # Enable warnings for possibly unsafe conversions.
