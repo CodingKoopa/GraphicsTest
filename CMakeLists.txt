@@ -23,7 +23,7 @@ set(PROJECT_INSTALL_BIN_DIR ${CMAKE_INSTALL_PREFIX}/bin CACHE PATH "Directory to
 
 # Import project CMake modules.
 list(APPEND CMAKE_MODULE_PATH
-  ${CMAKE_SOURCE_DIR}/CMake
+  ${CMAKE_SOURCE_DIR}/CMakeModules
 )
 
 # Include project functions.
