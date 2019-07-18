@@ -59,7 +59,10 @@ endif()
 # these are preferred.
 include_directories(Source)
 
-# Insert externals here.
+# Process the external code.
+
+add_subdirectory(Externals/spdlog)
+include_directories(Externals/spdlog/include)
 
 # Generate SCM header.
 configure_file(
@@ -71,5 +74,5 @@ configure_file(
 # directory ensures that the #include line will make sense.
 include_directories("${PROJECT_BINARY_DIR}/Source/")
 
-# Process the source directory.
+# Process the project code.
 add_subdirectory(Source)
