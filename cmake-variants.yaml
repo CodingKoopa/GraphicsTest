@@ -11,7 +11,7 @@ build_type:
     release:
       short: Release
       long: Optimize binary
-      buildType: Debug
+      buildType: Release
 enable_cli:
   default: "yes"
   choices:
